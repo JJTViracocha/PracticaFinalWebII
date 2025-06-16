@@ -1,0 +1,95 @@
+/* === ESTILO GLOBAL === */
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* === HEADER === */
+header {
+  background-image: linear-gradient(to right, #343a40, #212529);
+}
+
+header h1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* === NAVBAR === */
+.navbar {
+  font-size: 1.1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6600 !important;
+  transition: color 0.3s ease;
+}
+
+/* === ACTORES Y PELÍCULAS === */
+.card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.75rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #343a40;
+}
+
+/* === BOTONES PERSONALIZADOS === */
+button.btn-info {
+  background-color: #17a2b8;
+  border: none;
+}
+
+button.btn-info:hover {
+  background-color: #138496;
+}
+
+/* === MODAL === */
+.modal-content {
+  border-radius: 1rem;
+}
+
+/* === ACERCA DE === */
+.lead {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === FOOTER === */
+footer {
+  background: linear-gradient(to right, #212529, #343a40);
+  font-size: 0.95rem;
+}
+
+footer span {
+  font-weight: 400;
+}
+
+footer .badge {
+  padding: 0.5em 1em;
+  font-size: 0.85rem;
+  border-radius: 10px;
+}
+
+/* === RESPONSIVE OPTIMIZATION === */
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-img-top {
+    height: 220px !important;
+  }
+}
